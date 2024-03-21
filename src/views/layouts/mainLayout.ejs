@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        /* Estilos CSS personalizados */
+        .navbar-custom {
+            background-color: #007bff; /* Color de fondo del navbar */
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #fff; /* Color del texto del navbar */
+        }
+
+        .footer-custom {
+            background-color: #f8f9fa; /* Color de fondo del footer */
+            color: #6c757d; /* Color del texto del footer */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand" href="/">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/consejos">Consejos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/experiencias">Experiencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/preguntas">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tuHistoria">Cuentanos tu historia</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <%- body %>
+    </div>
+
+    <footer class="footer text-center text-lg-start footer-custom">
+        <div class="text-center p-3">
+            <%= footer %>
+        </div>
+    </footer>
+
+    <!-- JavaScript de Bootstrap (al final del documento para mejorar el tiempo de carga) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
