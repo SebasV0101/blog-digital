@@ -23,8 +23,14 @@ router.get('/preguntas', (req, res) => {
 });
 
 // Ruta para la página "Cuentanos tu historia"
-router.get('/tuHistoria', (req, res) => {
-    res.render('tuHistoria', { title: 'Cuentanos tu historia', footer: 'Derechos reservados 2024' });
+router.get('/historia', (req, res) => {
+    res.render('historia', { title: 'Cuentanos tu historia', footer: 'Derechos reservados 2024' });
 });
+
+// Ruta para enviar correo electronico
+router.post('/sendEmail', (req, res) => {
+    
+});
+
 
 export default router;

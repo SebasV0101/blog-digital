@@ -1,0 +1,14 @@
+/* Estilos CSS personalizados */
+.navbar-custom {
+    background-color: #007bff; /* Color de fondo del navbar */
+}
+
+.footer-custom {
+    background-color: #f8f9fa; /* Color de fondo del footer */
+    color: #6c757d; /* Color del texto del footer */
+}
+
+/* Estilo personalizado para el menú activo */
+.nav-link.active {
+    background-color: #fc0808; /*Color del fondo del item del menú seleccionado*/
+}
