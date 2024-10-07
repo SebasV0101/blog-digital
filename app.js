@@ -30,5 +30,5 @@ app.use('/', mainRoutes); // Usamos las rutas principales
 app.use('/api', sendEmail);
 
 app.listen(PORT, () => {
-  console.log(`Servidor iniciado en el puerto ${PORT}`);
+  console.log(`Servidor iniciado: http://localhost:${PORT}`);
 });

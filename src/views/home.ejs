@@ -3,12 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
     <title>Página principal</title>
 </head>
 <body>
-    <section>
-        <h2>¿Quienes somos?</h2>
-        <p>Hola soy la descripción</p>
+    <section class="container">
+        <h1>La vida de los cuidadores sustitutos</h1>
+        <h4>(Prácticas de crianza del hermano mayor)</h4>
+    </section>
+    <div class="container">
+        <img src="/img/play_time.png" alt="madres">
+    </div>
+    <div class="container"></div>
+        <h2>¿Los hermanos mayores cuidan a los hermanos menores?</h2>
+        <p>Los hermanos mayores son una realidad común en muchos hogares. En algunos casos, los padres pueden estar trabajando o tener otras obligaciones que impidan estar en casa todo el tiempo, por eso los hermanos mayores pueden asumir un papel importante en la crianza y el cuidado de los hermanos menores.</p>
+    </div>
+    <section class="container mt-5 mb-5">
+        <form action="">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6">
+                    <div class="form-group p-5 border rounded">
+                        <label for="email">¡Recibe nuestros últimos consejos!</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" 
+                                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Debes incluir un correo válido con '@'" required>
+                        <small id="emailText" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">¡Suscribete!</button>
+                </div>
+            </div>
+        </form>
     </section>
 </body>
 </html>

@@ -27,7 +27,6 @@ router.post('/send-email', async (req, res) => {
     
 Esta es mi historia: ${story}
 
-Contacto:
 Número telefónico: ${phone}
 Correo electrónico: ${email}`, // Contenido del cuerpo del correo
   };
