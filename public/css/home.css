@@ -1,3 +1,38 @@
 .container{
     text-align: center;
 }
+
+.carousel-inner {
+    height: 600px;
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    object-position: center;
+}
+
+.carousel-inner img {
+    height: 600px; /* Altura fija del carrusel */
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    background-color: #FB5D97;
+    border-radius: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 25px;
+    width: 25px;
+}
+
+/* Indicadores desactivados: color negro */
+.carousel-indicators [data-target] {
+    background-color: #040404; /* Color de los indicadores desactivados */
+   
+}
+
+/* Indicador activo: color rosa */
+.carousel-indicators .active {
+    background-color: #FB5D97; /* Color del indicador activo */
+}

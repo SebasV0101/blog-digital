@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menuItems[currentPath]) {
         const element = document.getElementById(menuItems[currentPath]);
-        console.log('Clase actual: ', element);
         if (element) {
             element.classList.add('active');
         }
