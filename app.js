@@ -4,6 +4,7 @@ import { config } from 'dotenv';
 import { fileURLToPath } from 'url';
 import mainRoutes from './src/controllers/mainController.js'; // Importamos las rutas principales
 import sendEmail from './src/controllers/sendEmail.js';
+import sendSuscription from './src/controllers/sendSuscription.js'
 import path from 'path'; // Importa la librería path
 
 const __filename = fileURLToPath(import.meta.url); // Obtiene la ruta del archivo actual
@@ -27,7 +28,7 @@ app.use(express.static('public'));
 
 // Definición de rutas
 app.use('/', mainRoutes); // Usamos las rutas principales
-app.use('/api', sendEmail);
+app.use('/api', sendEmail, sendSuscription);
 
 app.listen(PORT, () => {
   console.log(`Servidor iniciado: http://localhost:${PORT}`);
