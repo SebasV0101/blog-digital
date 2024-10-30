@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 100%;
+  width: 110%;
   background-color: #FB5D97;
   border-radius: 40px;
   min-height: 100%;
@@ -37,10 +37,14 @@
 
 .card-text {
     font-family: monospace;
+    color: black;
+    hyphens: auto;
+    text-align: justify;
 }
 
 .card-header {
     font-family: monospace;
+    color: black;
 }
 
 .title {

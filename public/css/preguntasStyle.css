@@ -1,6 +1,7 @@
 body {
     background-color: #f8f9fa;
 }
+
 .faq-section {
     margin: 50px auto;
     max-width: 800px;
@@ -8,16 +9,24 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .faq-header {
     background-color: #FB5D97;
     color: white;
     padding: 15px;
     border-radius: 8px 8px 0 0;
 }
+
 .faq-title {
     font-size: 1.5rem;
     font-family: monospace;
 }
+
 .title {
     font-family: monospace;
+}
+
+.card-body {
+    text-align: justify;
+    hyphens: auto;
 }

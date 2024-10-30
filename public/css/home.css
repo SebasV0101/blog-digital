@@ -1,5 +1,6 @@
 .container{
     text-align: center;
+    font-weight: bold;
 }
 
 .carousel-inner {
@@ -35,4 +36,17 @@
 /* Indicador activo: color rosa */
 .carousel-indicators .active {
     background-color: #FB5D97; /* Color del indicador activo */
+}
+
+.title {
+    font-family: monospace;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.form-group {
+    background-color: #FFD581;
 }

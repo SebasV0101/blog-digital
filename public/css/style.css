@@ -13,3 +13,86 @@
     background-color: #FB5D97; /*Color del fondo del item del menú seleccionado*/
     border-radius: 20px;
 }
+
+
+.social-container {
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    z-index: 1000; /* Asegúrate de que el botón esté en la parte superior */
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    align-items: flex-end; /* Alinear a la derecha */
+}
+
+/* Botón de despliegue */
+.toggle-button {
+    background-color: #FFD581; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 200%; /* Botón redondo */
+    padding: 15px; /* Padding para hacerlo más grande */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 24px; /* Tamaño de la fuente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.toggle-button:hover {
+    background-color: #FFC107; /* Color de fondo al pasar el ratón */
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+.social-icons {
+    display: flex; /* Flexbox para alinear los íconos */
+    flex-direction: column; /* Columna */
+    align-items: flex-end; /* Alinear a la derecha */
+    margin-top: 10px; /* Espaciado superior */
+    transition: opacity 0.3s; /* Transición suave para la aparición */
+}
+
+/* Estilos para los íconos */
+.social-icon {
+    text-decoration: none; /* Sin subrayado */
+    font-size: 28px; /* Tamaño de los íconos */
+    margin-bottom: 10px; /* Espaciado entre íconos */
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(10px); /* Desplazamiento hacia abajo */
+    transition: opacity 0.3s, transform 0.3s; /* Transición suave */
+}
+
+/* Mostrar los íconos */
+.social-icons.visible .social-icon {
+    opacity: 1; /* Aparecer */
+    transform: translateY(0); /* Regresar a la posición original */
+}
+
+/* Ocultar los íconos */
+.hidden {
+    display: none; /* Ocultar */
+}
+
+/* Efecto al pasar el ratón sobre los íconos */
+.social-icon:hover {
+    opacity: 0.8; /* Ligera transparencia al pasar el ratón */
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.correo {
+    color: #FB5D97;
+}
+
+body {
+    background-image: url('/img/fondo_niños.jpg');
+    background-size: cover; /* Abarca toda la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Asegura que cubra el contenido más alto que la pantalla */
+    position: relative;
+    z-index: -1;
+}

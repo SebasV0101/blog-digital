@@ -4,3 +4,7 @@
 .form-control:valid {
     border-color: #28a745;
 }
+
+.title {
+    font-family: monospace;
+}

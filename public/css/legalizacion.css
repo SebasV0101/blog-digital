@@ -1,0 +1,26 @@
+.list-group a {
+    text-decoration: none;
+  }  
+
+.list-group-item.active {
+    background-color: white;
+    color: #FB5D97; /* Color rosado */
+    font-weight: bold;
+  }
+
+
+   /* Cambiar el color al pasar el mouse sobre los demás elementos */
+.list-group-item:hover {
+    background-color: #FB5D97; /* Rosado */
+    color: white;
+  }
+
+.title {
+    font-family: monospace;
+}
+
+p{
+  font-weight: bold;
+  text-align: justify;
+  hyphens: auto;
+}
