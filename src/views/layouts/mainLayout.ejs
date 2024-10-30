@@ -13,7 +13,8 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-            <a class="navbar-brand" href="/" id="inicio">Inicio</a>
+            <img src="img/logo.png" width="85" height="85" alt="logo">
+            <a class="navbar-brand ml-4" href="/" id="inicio">Inicio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,7 +31,10 @@
                         <a class="nav-link" href="/preguntas" id="preguntas">Preguntas frecuentes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/historia" id="historia">Cuentanos tu historia</a>
+                        <a class="nav-link" href="/historia" id="historia">Cuéntanos tu historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/legalizacion" id="legalizacion">Legalización</a>
                     </li>
                 </ul>
             </div>
@@ -46,10 +50,23 @@
             </div>
         </footer>
 
+         <!-- Botón de redes sociales -->
+        <div class="social-container">
+            <button id="toggle-button" class="toggle-button">
+                <i class="fas fa-chevron-down" id="arrow-icon"></i>
+            </button>
+            <div id="social-icons" class="social-icons hidden">
+                <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fas fa-envelope correo"></i></a>
+                <a href="https://www.youtube.com/@CuidadoresSustitutos" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
         <!-- JavaScript de Bootstrap (al final del documento para mejorar el tiempo de carga) -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/js/activeButtons.js"></script>
     </body>
 </html>

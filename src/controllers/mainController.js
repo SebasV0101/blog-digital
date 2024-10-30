@@ -27,6 +27,11 @@ router.get('/historia', (req, res) => {
     res.render('historia', { title: 'Cuentanos tu historia', footer: 'Derechos reservados 2024' });
 });
 
+// Ruta para la página "legalizacion"
+router.get('/legalizacion', (req, res) => {
+    res.render('legalizacion', { title: 'Cuentanos tu historia', footer: 'Derechos reservados 2024' });
+});
+
 // Ruta para enviar correo electronico
 router.post('/sendEmail', (req, res) => {
     

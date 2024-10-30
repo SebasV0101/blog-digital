@@ -15,20 +15,15 @@ const transporter = nodemailer.createTransport({
 });
 
 // Ruta para enviar correos electrónicos
-router.post('/send-email', async (req, res) => {
-  const { name, email, phone, story } = req.body;
+router.post('/send-suscription', async (req, res) => {
+  const { email } = req.body;
 
   // Opciones del correo
   const mailOptions = {
     from: process.env.EMAIL_USER, // Remitente (puede ser el mismo del auth)
     to: process.env.EMAIL_USER, // Destinatario
-    subject: `Historia enviada por ${name}`, // Asunto del correo
-    text: `Hola soy ${name},
-    
-Esta es mi historia: ${story}
-
-Número telefónico: ${phone}
-Correo electrónico: ${email}`, // Contenido del cuerpo del correo
+    subject: `Suscripcion nueva`, // Asunto del correo
+    text: `Quiero recibir novedades a mi correo ${email}`, // Contenido del cuerpo del correo
   };
 
   try {
@@ -36,10 +31,10 @@ Correo electrónico: ${email}`, // Contenido del cuerpo del correo
     const info = await transporter.sendMail(mailOptions);
 
     // Si el correo se envía correctamente
-    res.status(200).json({ message: 'Correo enviado correctamente', info });
+    res.status(200).json({ message: 'Suscripcion exitosa', info });
   } catch (error) {
     // Si ocurre un error al enviar el correo
-    res.status(500).json({ message: 'Error al enviar el correo', error });
+    res.status(500).json({ message: 'Error al suscribirte', error });
   }
 });
 

@@ -7,7 +7,8 @@ var menuItems = {
     "/consejos": "consejos",
     "/experiencias": "experiencias",
     "/preguntas": "preguntas",
-    "/historia": "historia"
+    "/historia": "historia",
+    "/legalizacion": "legalizacion"
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,9 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menuItems[currentPath]) {
         const element = document.getElementById(menuItems[currentPath]);
-        console.log('Clase actual: ', element);
         if (element) {
             element.classList.add('active');
         }
     }
+});
+
+document.getElementById('toggle-button').addEventListener('click', function () {
+    const socialIcons = document.getElementById('social-icons');
+    socialIcons.classList.toggle('hidden');
+    socialIcons.classList.toggle('visible'); // Añade la clase visible
+
+    const arrowIcon = document.getElementById('arrow-icon');
+    arrowIcon.classList.toggle('fa-chevron-down'); // Cambia el ícono
+    arrowIcon.classList.toggle('fa-chevron-up'); // Cambia el ícono
 });

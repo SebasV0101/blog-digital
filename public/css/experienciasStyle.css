@@ -35,6 +35,8 @@
   
   .card-text {
       font-family: monospace;
+      text-align: justify;
+      hyphens: auto;
   }
   
   .card-header {
